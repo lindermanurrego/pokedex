@@ -15,17 +15,17 @@ public class MainActivity extends AppCompatActivity {
 
         ListView pokemonListView = (ListView) findViewById(R.id.pokemon_listView);
         ArrayList<Pokemon> pokemonList = new ArrayList<>();
-        pokemonList.add(new Pokemon("1";"Bulbasaur",Pokemon.Type.PLANT));
-        pokemonList.add(new Pokemon("2";"Tvysaur",Pokemon.Type.PLANT));
-        pokemonList.add(new Pokemon("3";"Venuasaur",Pokemon.Type.PLANT));
-        pokemonList.add(new Pokemon("4";"Charmander",Pokemon.Type.FIRE));
-        pokemonList.add(new Pokemon("5";"Charmeleon",Pokemon.Type.FIRE));
-        pokemonList.add(new Pokemon("6";"Charizar",Pokemon.Type.FIRE));
-        pokemonList.add(new Pokemon("7";"Squirtle",Pokemon.Type.WATER));
-        pokemonList.add(new Pokemon("8";"Wartortle",Pokemon.Type.WATER));
-        pokemonList.add(new Pokemon("9";"Blastoise",Pokemon.Type.WATER));
-        pokemonList.add(new Pokemon("25";"Pikachu",Pokemon.Type.ELECTRIC));
-        pokemonList.add(new Pokemon("26";"Raichu",Pokemon.Type.ELECTRIC));
+        pokemonList.add(new Pokemon("1","Bulbasaur",Pokemon.Type.PLANT));
+        pokemonList.add(new Pokemon("2","Tvysaur",Pokemon.Type.PLANT));
+        pokemonList.add(new Pokemon("3","Venuasaur",Pokemon.Type.PLANT));
+        pokemonList.add(new Pokemon("4","Charmander",Pokemon.Type.FIRE));
+        pokemonList.add(new Pokemon("5","Charmeleon",Pokemon.Type.FIRE));
+        pokemonList.add(new Pokemon("6","Charizar",Pokemon.Type.FIRE));
+        pokemonList.add(new Pokemon("7","Squirtle",Pokemon.Type.WATER));
+        pokemonList.add(new Pokemon("8","Wartortle",Pokemon.Type.WATER));
+        pokemonList.add(new Pokemon("9","Blastoise",Pokemon.Type.WATER));
+        pokemonList.add(new Pokemon("25","Pikachu",Pokemon.Type.ELECTRIC));
+        pokemonList.add(new Pokemon("26","Raichu",Pokemon.Type.ELECTRIC));
 
 
 
