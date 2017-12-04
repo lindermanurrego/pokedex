@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         pokemonList.add(new Pokemon("25","Pikachu",Pokemon.Type.ELECTRIC));
         pokemonList.add(new Pokemon("26","Raichu",Pokemon.Type.ELECTRIC));
 
-
+        final PokemonListAdanpter adapter = new PokemonListAdanpter();
 
 
 
