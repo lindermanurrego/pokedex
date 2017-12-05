@@ -2,7 +2,10 @@ package com.example.usre.pokedex;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -29,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
 
         final PokemonListAdapter adapter = new PokemonListAdapter(this,R.layout.pokemon_list_items,pokemonList);
         pokemonListView.setAdapter(adapter);
+
+        pokemonListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Pokemon selectedPokemon = adapter.getItem(position);
+                if (selectedPokemon != null){
+                    Toast.makeText(MainActivity.this,selectedPokemon.getName(),Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
 
 
