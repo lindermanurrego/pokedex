@@ -22,7 +22,7 @@ public class PokemonListAdapter extends ArrayAdapter<Pokemon>{
      private ArrayList<Pokemon> pokemonList;
      private int layoutId;
 
-    public PokemonListAdanpter(@NonNull Context context, int resource, @NonNull ArrayList<Pokemon> pokemonList) {
+    public PokemonListAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Pokemon> pokemonList) {
 
         super(context, resource,pokemonList);
         this.context = context;
@@ -59,16 +59,16 @@ public class PokemonListAdapter extends ArrayAdapter<Pokemon>{
         switch (type){
             case FIRE:
                 holder.pokemonTypeImageView.setImageDrawable(ContextCompat.getDrawable(context,R.drawable.fire));
-                break;;
+                break;
             case WATER:;
                 holder.pokemonTypeImageView.setImageDrawable(ContextCompat.getDrawable(context,R.drawable.water));
-                break;;
+                break;
             case PLANT:;
                 holder.pokemonTypeImageView.setImageDrawable(ContextCompat.getDrawable(context,R.drawable.plant));
-                break;;
+                break;
             case ELECTRIC:;
                 holder.pokemonTypeImageView.setImageDrawable(ContextCompat.getDrawable(context,R.drawable.electric));
-                break;;
+                break;
         }
         return  convertView;
     }
