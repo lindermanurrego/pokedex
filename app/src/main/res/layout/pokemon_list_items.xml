@@ -15,7 +15,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-        tools:text="1"/>
+        tools:text="1" />
     <TextView
         android:id="@+id/pokemon_list_item_id_textView"
         android:layout_width="0dp"
@@ -24,11 +24,12 @@
         android:gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
         tools:text="Bulbasur" />
-
-    <ImageView
-        android:id="@+id/pokemon_list_item_type_image"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_weight="1"
-        tools:src="@drawable/electric"/>
+     <ImageView
+         android:id="@+id/pokemon_list_item_type_image"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:layout_weight="1"
+         android:contentDescription="@string/electric"
+         tools:src="@drawable/electric"
+         />
 </LinearLayout>
